@@ -1,5 +1,20 @@
 # vehicles
 
+ANTES QUE NADA, ANEXO LINK RENDER:
+https://vehicles-1kbb.onrender.com****
+https://dashboard.render.com/web/srv-d0bfs5pr0fns73ddudg0
+# Exported from Render on 2025-05-04T05:49:48Z
+services:
+- type: web
+  name: vehicles
+  runtime: python
+  repo: https://github.com/Al3kHT/vehicles
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: streamlit run app.py
+version: "1"
+
 SE CREO EL ENTORNO CORRECTAMENTE, CON LOS PAQUETES DE PANDAS, PLOTLY Y STREAMLIT
 Recordatorio. Para instalar desde requirements.txt con conda, el comando correcto es:
 conda env create --name vehicles_myenv --file requirements.txt 
